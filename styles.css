@@ -21,99 +21,87 @@ body {
 
 .content {
     width: 100%;
-    max-width: 28rem;
+    max-width: 24rem;
     margin: 0 auto;
+    text-align: center;
 }
 
 .header {
-    text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 h1 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #111827;
-    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 1rem;
 }
 
 .subtitle {
     font-size: 0.875rem;
-    color: #4B5563;
+    color: #000;
+    max-width: 20rem;
+    margin: 0 auto;
+    line-height: 1.4;
 }
 
 .credentials {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    text-align: left;
     margin-bottom: 2rem;
 }
 
-.credential-box {
-    background-color: #F9FAFB;
-    padding: 1rem;
-    border-radius: 0.5rem;
+.credential-item {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .credential-label {
-    font-size: 0.875rem;
-    color: #6B7280;
-    margin-bottom: 0.25rem;
+    font-size: 1rem;
+    color: #000;
+    margin-right: 0.5rem;
 }
 
-.credential-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.credential-value {
     font-family: monospace;
-    color: #111827;
+    color: #000;
 }
 
 .copy-btn {
     background: none;
     border: none;
-    color: #6B7280;
+    padding: 0.25rem;
     cursor: pointer;
-    padding: 0.5rem;
-    transition: color 0.2s;
+    color: #000;
+    margin-left: 0.5rem;
 }
 
-.copy-btn:hover {
-    color: #374151;
-}
-
-.warnings {
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.warning-text {
-    color: #EF4444;
-    font-weight: 500;
+.warning {
+    color: #FF0000;
     font-size: 0.875rem;
     margin-bottom: 0.5rem;
 }
 
-.info-text {
-    color: #6B7280;
+.info {
+    color: #000;
     font-size: 0.875rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .follow-btn {
-    width: 100%;
-    background-color: #EF4444;
+    background-color: #FF0000;
     color: white;
-    padding: 0.75rem 1rem;
     border: none;
-    border-radius: 0.5rem;
-    font-weight: 500;
+    padding: 0.75rem 2rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
     cursor: pointer;
     transition: background-color 0.2s;
 }
 
 .follow-btn:hover {
-    background-color: #DC2626;
+    background-color: #E60000;
 }
 
 .toast {
@@ -131,19 +119,4 @@ h1 {
 
 .toast.show {
     opacity: 1;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.animate-fade-in {
-    animation: fadeIn 0.5s ease-out;
 }
