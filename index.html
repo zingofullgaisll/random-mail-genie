@@ -9,31 +9,31 @@
 </head>
 <body>
     <div class="container">
-        <div class="content">
+        <div class="content animate-fade-in">
             <div class="header">
                 <h1>CONTAS GEMADAS</h1>
                 <p class="subtitle">liberando contas em momentos aleatórios do dia, então fique esperto e seja rápido</p>
             </div>
 
             <div class="credentials">
-                <div class="credential-item">
-                    <span class="credential-label">login:</span>
-                    <div style="display: flex; align-items: center;">
-                        <span id="loginText" class="credential-value"></span>
+                <div class="credential-box">
+                    <div class="credential-label">login:</div>
+                    <div class="credential-content">
+                        <span id="loginText"></span>
                         <button onclick="copyToClipboard('loginText', 'login')" class="copy-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
                             </svg>
                         </button>
                     </div>
                 </div>
 
-                <div class="credential-item">
-                    <span class="credential-label">Senha:</span>
-                    <div style="display: flex; align-items: center;">
-                        <span id="passwordText" class="credential-value"></span>
+                <div class="credential-box">
+                    <div class="credential-label">Senha:</div>
+                    <div class="credential-content">
+                        <span id="passwordText"></span>
                         <button onclick="copyToClipboard('passwordText', 'senha')" class="copy-btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>
                             </svg>
                         </button>
@@ -41,9 +41,11 @@
                 </div>
             </div>
 
-            <div class="warning">ATENÇÃO: Todas as contas são via GOOGLE</div>
-            <div class="info">(ao pegar a conta troque todos os meios possíveis de recuperação.)</div>
-            <button class="follow-btn">SEGUIR CRIADOR</button>
+            <div class="warnings">
+                <p class="warning-text">ATENÇÃO: Todas as contas são via GOOGLE</p>
+                <p class="info-text">(ao pegar a conta troque todos os meios possíveis de recuperação.)</p>
+                <button class="follow-btn">SEGUIR CRIADOR</button>
+            </div>
         </div>
     </div>
 
